@@ -1,0 +1,409 @@
+/* =====================
+  General Styles
+===================== */
+html { font-size: 110%; }
+html, body {
+  height: 100%; /* Fullscreen BG */
+  width: 100%;
+}
+@font-face {
+  font-family: 'Arno Pro Display Light';
+  src: url('fonts/ArnoPro-DisplayLight.woff2') format('woff2'),
+       url('fonts/ArnoPro-DisplayLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  color: #394c4a;
+  /* font-family: 'Work Sans', helvetica, sans-serif; */
+  font-family: 'Arno Pro Display Light', serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+/* =====================
+  Navbar Styles
+===================== */
+
+.navbar-default {
+  background-color: transparent;
+  border: none;
+  height: 80px;
+  left: 0;
+  margin-bottom: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+.navbar-header {
+  height: 80px;
+}
+.navbar-header button{
+  margin-top: 20px;
+}
+.navbar-nav {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.navbar-brand,
+.navbar-nav > li > a {
+  font-family: 'Unica One';
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.navbar-brand {
+  font-size: 1rem;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 20px;
+}
+.navbar-brand .logo {
+  margin-right: 15px;
+  margin-top: -20px;
+  max-height: 50px;
+}
+.navbar-brand span {
+  color: #023D8A;
+}
+.navbar-nav > li > a,
+.navbar-nav > li > button {
+  color: #6b7a78;
+  height: 36px;
+  line-height: 36px;
+  margin-top: 22px;
+}
+.navbar-default .navbar-nav > .active > a {
+  background-color: transparent;
+  color: #29a598;
+  text-decoration: underline;
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: transparent;
+  color: #208479;
+  text-decoration: underline;
+}
+/* Fixed Menu */
+.menu-fixed {
+  background-color: #fffefd;
+  background-color: rgba(255,254,253,0.97);
+  border-radius: 0;
+  box-shadow: 0 3px 9px rgba(8,33,30,0.15);
+  height: 60px;
+  padding-top: 0;
+  position: fixed;
+  transition: background-color 0.5s ease-in-out,
+              box-shadow 0.5s ease-in-out;
+}
+.menu-fixed .navbar-header {
+  height: 60px;
+}
+.menu-fixed .navbar-toggle,
+.menu-fixed .navbar-nav > li > a {
+  margin-top: 8px;
+}
+
+.menu-fixed .navbar-brand {
+  display: block;
+  margin-top: 7px;
+  opacity: 1;
+}
+
+/* =====================
+  Jumbotron Styles
+===================== */
+.jumbotron {
+  background: linear-gradient(rgba(94, 58, 3, 0.22), rgba(160, 131, 105, 0.261)), url("img/cover.jpeg") center center fixed;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  min-height: 310px;
+  position: relative;
+  width: 100%;
+}
+/* 
+.jumbotron .container {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.jumbotron .row {
+  padding-bottom: 45px;
+}
+.jumbotron .logo {
+  max-width: 150px;
+  width: 80%;
+}
+*/
+.jumbotron .title {
+  color: #ffffff;
+  font-size: 650%;
+  margin: 9%;
+  font-family: 'Arno Pro Display Light', serif;;
+} 
+.jumbotron .sub {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 100;
+} 
+.jumbotron .bookBTN{
+  color: white; 
+  border: 2px solid white;
+  background-color: transparent; 
+  padding: 10px 30px; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  display: inline-block; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
+} 
+.jumbotron .bookBTN:hover{
+  background-color: white; 
+  color: black;
+} 
+
+/* =====================
+  Services Styles
+===================== */
+.services{
+  padding-bottom: 7%;
+}
+.booking{
+  display: flex;
+  flex-wrap: wrap;
+}
+.booking > * {
+  width: calc(33.33% - 5rem);
+  padding: 1rem;
+  margin: 2.5rem;
+}
+.booking div {
+  border: solid black 1px;
+  padding: 2%;
+}
+.services h2{
+  color: black;
+}
+.services h1{
+  font-size: 600%;
+  padding-top: 5%;
+  margin: 3%;
+  font-family: 'Arno Pro Display Light', serif;
+  line-height: 0%;
+}
+.services hr {
+  border: none; 
+  height: 1px;
+  background-color: black; 
+  margin: 1rem 0; 
+}
+.serviceBTN{
+  color: rgb(0, 0, 0); 
+  border: 2px solid rgb(0, 0, 0);
+  background-color: transparent; 
+  padding: 10px 30px; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  display: inline-block; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
+} 
+.serviceBTN:hover{
+  background-color: rgb(0, 0, 0); 
+  color: rgb(255, 255, 255);
+} 
+
+/* =====================
+  About us Styles
+===================== */
+.image-1 img{
+  width: 80%;
+}
+.about{
+  background-color: white;
+  width: 80%;
+  padding: 5%;
+  margin: 0 auto;
+}
+.container{
+  width: 80%
+}
+.about-section{
+  background:linear-gradient(rgba(3, 38, 94, 0.381), rgba(97, 102, 181, 0.348)), url('https://images.moneycontrol.com/static-mcnews/2021/05/shutterstock_245322604-770x433.jpg?impolicy=website&width=770&height=431') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.sec-title h1{
+    font-size: 600%;
+    padding-top: 5%;
+    margin: 3%;
+    font-family: 'Arno Pro Display Light', serif;
+    line-height: 0%;
+  }
+
+.sec-title .title{
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ff2222;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.about-section{
+  position: relative;
+  padding: 120px 0 70px;
+}
+
+.about-section .sec-title{
+  margin-bottom: 45px;
+}
+
+.about-section .content-column{
+  position: relative;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
+.about-section .content-column .inner-column{
+  position: relative;
+  padding-left: 30px;
+}
+
+.container .text{
+  padding: 5%;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #848484;
+  font-weight: 400;
+}
+
+.about-section .image-column .inner-column{
+  position: relative;
+  padding-left: 120px;
+  padding-bottom: 125px;
+}
+
+.about-section .image-column .image-1{
+  position: relative;
+}
+
+.about-section .image-column .image-2{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.about-section .image-column .image-2 img,
+.about-section .image-column .image-1 img{
+  box-shadow: 0 50px 80px rgba(2, 9, 71, 0.15);
+}
+
+
+
+@media (max-width: 1063px) {
+  .booking > * {
+    width: calc(33.33% - 2rem);
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .services h1{
+    padding-bottom: 5%;
+  }
+}
+
+
+@media (max-width: 767px) {
+  /*** Mobile Nav ***/
+  .navbar-toggle {
+    height: 36px;
+    margin-bottom: 22px;
+    margin-top: 22px;
+  }
+  .navbar-toggle .glyphicon {
+    color: #6b7a78;
+    top: -2px;
+  }
+  .navbar-default .navbar-toggle:focus,
+  .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+    border-color: #29a598;
+  }
+  .navbar-default .navbar-toggle .active {
+    color: #29a598;
+  }
+  .navbar-collapse {
+    background-color: #fffefd;
+    background-color: rgba(255,254,253,0.97);
+    border: none;
+    box-shadow: 0 2px 8px rgba(8,33,30,0.2);
+    left: 0;
+    /* position: absolute; */
+    right: 0;
+    text-align: center;
+  }
+  .navbar-collapse .outline.pink {
+    margin: 15px auto 30px;
+    max-width: 150px;
+  }
+
+  .jumbotron .title {
+    color: #ffffff;
+    font-size: 80px;
+    margin: auto;
+    margin-top: 20%;
+    font-family: 'Arno Pro Display Light', serif;;
+  } 
+  .jumbotron .sub {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 100;
+  } 
+
+  .booking > * {
+      width: 100%; 
+  }
+
+  .services h1{
+    padding-bottom: 5%;
+  }
+
+}
+
+
+/* ============================================================================ */
+/* .sample{
+  width: 20%;
+  height: 60px;
+  background-color: #208479;
+  padding-top: 10%;
+}
+
+.intro-header {
+  background: url('https://via.placeholder.com/1500x855') no-repeat center center fixed;
+}
+
+.intro-header { 
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: url('img/cover.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  height: 855px;
+}
+.bg-overlay {
+background:rgba(0,0,0, 0.3);
+height: 855px;
+}
+
+.intro-message {
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+} */
